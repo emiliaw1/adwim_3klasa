@@ -1,0 +1,35 @@
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+li{
+  border: 3px solid black;
+  cursor: pointer;
+  padding: 3px;
+  padding-left: 15px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  width: 200px;
+  background-color: purple;
+  color: white;
+}
+h3{
+  text-align: center;
+}
+.content{
+  text-align: center;
+}
+li > .content{
+  display: none;
+}
+li.active > .content{
+  display: block;
+}
+li.active{
+  background-color: blue;
+}
